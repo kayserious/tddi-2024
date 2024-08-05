@@ -1,0 +1,5 @@
+*.safetensors filter=lfs diff=lfs merge=lfs
+
+tr_core_news_trf_post_process/ner/model filter=lfs diff=lfs merge=lfs
+
+tr_core_news_trf_post_process/transformer/model filter=lfs diff=lfs merge=lfs

@@ -1,0 +1,10 @@
+{
+  "spacy_model": "tr_core_news_trf_post_process",
+  "span_context": 3,
+  "labels": [
+    "n\u00f6tr",
+    "olumlu",
+    "olumsuz"
+  ],
+  "normalize_embeddings": false
+}

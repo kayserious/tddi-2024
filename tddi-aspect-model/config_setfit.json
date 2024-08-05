@@ -1,0 +1,9 @@
+{
+  "spacy_model": "tr_core_news_trf_post_process",
+  "span_context": 0,
+  "labels": [
+    "no aspect",
+    "aspect"
+  ],
+  "normalize_embeddings": false
+}
