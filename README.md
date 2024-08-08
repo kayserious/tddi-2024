@@ -1,4 +1,4 @@
-**Model**
+# Model
 
 Model eğitimi ve eğitilmiş bir modeli canlıda kullanmak için;
 
@@ -10,7 +10,7 @@ Model eğitimi ve eğitilmiş bir modeli canlıda kullanmak için;
     
     
 
-**Model Eğitimi**
+## **Model Eğitimi**
 
 Model arayüzü geliştirilirken sklearn API ile uyumlu çalışacak şekilde düzenlenmiştir (.fit() ve .predict() metotları)
 
@@ -44,7 +44,7 @@ X ve y olmak üzere iki `pandas.Series` objesini ve bir doğrulama seti (opsiyon
 
 Bu aşamadan sonra model istenilirse canlıda kullanılabilir
 
-**Model Kullanımı**
+## **Model Kullanımı**
 
 Kaydedilen aspect, polarity ve spaCy modelleri ile  `load=True` argümanıyla model tekrardan ayağa kaldırılabilir;
 
@@ -63,7 +63,7 @@ Kaydedilen aspect, polarity ve spaCy modelleri ile  `load=True` argümanıyla mo
     
     model.predict_sentence(ornek_cumle)
     
-**Geliştirme Süreci**
+# **Geliştirme Süreci**
 
 | Sentiment + NER Modeli                                          | CV | Eğitim Epoch | Eğitim TDDI Score | Doğrulama TDDI Score | Not                                                                                                                                                                                                               |
 |-----------------------------------------------------------------|---:|--------------|-------------------|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
