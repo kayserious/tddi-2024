@@ -1,3 +1,20 @@
+
+
+# Kurulum
+
+## Repo'yu İndirme
+
+```
+mkdir kayserious_tddi
+cd kayserious_tddi
+git clone https://github.com/kayserious/tddi-2024.git
+```
+## Gereksinimlerin Yüklenmesi
+
+```
+pip install -r requirements.txt
+```
+
 # Model
 
 Model eğitimi ve eğitilmiş bir modeli canlıda kullanmak için;
@@ -12,9 +29,9 @@ Model eğitimi ve eğitilmiş bir modeli canlıda kullanmak için;
 
 ## **Model Eğitimi**
 
-Model arayüzü geliştirilirken sklearn API ile uyumlu çalışacak şekilde düzenlenmiştir (.fit() ve .predict() metotları)
+Model arayüzü geliştirilirken sklearn API ile uyumlu çalışacak şekilde düzenlenmiştir (`.fit()` ve `.predict()` metotları)
 
-X ve y olmak üzere iki `pandas.Series` objesini ve bir doğrulama seti (opsiyonel) girdi olarak alır
+`X` ve `y` olmak üzere iki `pandas.Series` objesini ve bir doğrulama seti (opsiyonel) girdi olarak alır
 
 
 
@@ -22,13 +39,13 @@ X ve y olmak üzere iki `pandas.Series` objesini ve bir doğrulama seti (opsiyon
     
     from ner_postprocess_pipeline import post_process_ner
     
-    df = pd.DataFrame({‘comments’:comment_list,’y’:output_list})
+    df = pd.DataFrame({'comments':comment_list,'y':output_list})
     
-    X = df[‘Comments’]
+    X = df['Comments']
     
-    y = df[‘y’]
+    y = df['y']
     
-    model = TDDIModel(spacy_model = ‘tr_core_news_trf_post_process’)
+    model = TDDIModel(spacy_model = 'tr_core_news_trf_post_process')
     
     model.fit(X = X,y = y,eval_X = None,eval_y = None)
     
@@ -36,7 +53,7 @@ X ve y olmak üzere iki `pandas.Series` objesini ve bir doğrulama seti (opsiyon
     
     "tddi-aspect-model",
     
-    "tddi-polarity-model",
+    "tddi-polarity-model"
     
     )
     
