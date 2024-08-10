@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/26e7b98d-29c4-44cb-8459-6e9166c981d6" alt="Mantı yiyen Türk kedisi"/>
+</p>
+
 
 
 # Kurulum
